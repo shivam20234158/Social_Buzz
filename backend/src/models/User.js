@@ -40,11 +40,15 @@ const userSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
       },
-      friend:[{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-      }]
-},{timestamps: true});
+      friends: [
+        {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "User",
+        },
+      ],
+    },
+    { timestamps: true }
+  );
 
 //pre hook
 //to protect from the hacker to get data (real password will be converted)
