@@ -12,7 +12,7 @@ router.get("/friends",getMyFriends);
 router.post("/friend-request/:id",sendFriendRequest);
 router.put("/friend-request/:id/accept",acceptFriendRequest);
 
-router.get("/friend-request",getFriendRequests);
-router.get("/outgoing-friend-request/:id",getOutgoingFriendReqs); // Get friend requests for a specific user
+router.get("/friend-requests",getFriendRequests);
+router.get("/outgoing-friend-requests",getOutgoingFriendReqs); // Get friend requests for a specific user
 
 export default router;
